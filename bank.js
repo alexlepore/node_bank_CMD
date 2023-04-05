@@ -55,3 +55,5 @@ function withdraw() {
 
   console.log("Withdrew " + userInputValue + ".");
 }
+
+//function lotto()
