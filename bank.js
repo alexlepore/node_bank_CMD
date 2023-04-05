@@ -56,4 +56,15 @@ function withdraw() {
   console.log("Withdrew " + userInputValue + ".");
 }
 
-//function lotto()
+function lotto(){
+    fs.appendFile('bank.txt', ', -.25', function(err){
+        let randomNumber = Math.floor((Math.random() * 10) + 1);
+            console.log(randomNumber);
+        if(randomNumber === 1){
+            fs.appendFile('bank.txt', ', 100');
+            console.log("Congratulations, you've just won 100 dollars by participating in the lottery!")
+        } else{
+            console.log(".25 has been subtracted from your account from participating. You did not win.")
+        }
+    })
+}
