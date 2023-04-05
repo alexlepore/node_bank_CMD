@@ -1,4 +1,4 @@
-#Bank CLI App
+# Bank CLI App
 
 This app uses the basic functionality found at the bank.
 
